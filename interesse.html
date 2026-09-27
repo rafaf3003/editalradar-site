@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Interesse no piloto — EditalRadar</title>
+  <title>Comece grátis — EditalRadar</title>
   <meta name="description" content="Conte o perfil da sua empresa de ar-condicionado. Marina monta os filtros e envia alertas com link oficial do PNCP." />
   <style>
     :root {
@@ -51,7 +51,7 @@
       </nav>
     </header>
 
-    <h1>Interesse no piloto</h1>
+    <h1>Comece grátis</h1>
     <p class="lead">Preencha o perfil da empresa. Ao enviar, seu aplicativo de e-mail abre com a mensagem pronta para <strong style="color:var(--text)">equipe.editalradar@gmail.com</strong> (Marina). Não há cobrança nesta página.</p>
 
     <form id="form" action="#" method="get">
@@ -124,7 +124,7 @@
           <option value="Dias úteis quando houver match">Dias úteis quando houver match</option>
           <option value="Resumo 1× por semana">Resumo 1× por semana</option>
         </select>
-        <label class="check"><input type="checkbox" name="ciente_preco" id="ciente_preco" value="sim" required /> Li: piloto R$ 0 por 2 semanas; depois R$ 189/mês opcional, renovação só se eu confirmar. *</label>
+        <label class="check"><input type="checkbox" name="ciente_preco" id="ciente_preco" value="sim" required /> Li: 2 semanas grátis; depois plano mensal R$ 189 opcional, renovação só se eu confirmar. *</label>
         <label class="check"><input type="checkbox" name="privacidade" id="privacidade" value="sim" required /> Autorizo o uso deste e-mail para alertas e comunicação do EditalRadar (<a href="privacidade.html">privacidade</a>). *</label>
       </fieldset>
 
@@ -153,7 +153,7 @@
     }
     function buildBody() {
       var lines = [];
-      lines.push("Interesse no piloto EditalRadar");
+      lines.push("Interesse EditalRadar — 2 semanas grátis");
       lines.push("");
       lines.push("Nome: " + val("nome"));
       lines.push("Empresa: " + val("empresa"));
@@ -172,7 +172,7 @@
       lines.push("Exclusão rígida de porte: " + (document.getElementById("porte_rigido").checked ? "sim" : "não"));
       lines.push("Exclusões: " + (val("excluir") || "(nenhuma)"));
       lines.push("Frequência: " + val("freq"));
-      lines.push("Ciente piloto 2 semanas / R$189 opcional: sim");
+      lines.push("Ciente 2 semanas grátis / plano R$189 opcional: sim");
       lines.push("");
       lines.push("(Enviado pela página interesse.html — sem checkout)");
       return lines.join("\n");
@@ -180,12 +180,12 @@
     function showPreview() {
       var box = document.getElementById("preview");
       box.style.display = "block";
-      box.textContent = "Para: equipe.editalradar@gmail.com\nAssunto: Interesse piloto EditalRadar — " + val("empresa") + "\n\n" + buildBody();
+      box.textContent = "Para: equipe.editalradar@gmail.com\nAssunto: Interesse EditalRadar — " + val("empresa") + "\n\n" + buildBody();
     }
     document.getElementById("form").addEventListener("submit", function (e) {
       e.preventDefault();
       if (!document.getElementById("ciente_preco").checked || !document.getElementById("privacidade").checked) return;
-      var subject = "Interesse piloto EditalRadar — " + val("empresa");
+      var subject = "Interesse EditalRadar — " + val("empresa");
       var href = "mailto:equipe.editalradar@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(buildBody());
       showPreview();
       window.location.href = href;

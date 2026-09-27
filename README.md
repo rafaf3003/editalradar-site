@@ -1,15 +1,10 @@
 # EditalRadar — site público
 
-Landing do piloto (HTML estático).
+Landing comercial (HTML estático).
 
-**URL pública:** https://editalradar.brindle-potential.workers.dev/
+**URL pública:** pendente deploy em URL de marca limpa (`editalradar.pages.dev` ou `editalradar.netlify.app`).
+Não usar `*.brindle-potential.workers.dev` nem `rafaf3003.github.io` com clientes.
 
 Identidade pública: Marina | EditalRadar · equipe.editalradar@gmail.com
-
-Hospedagem: Cloudflare Workers (assets estáticos). Deploy local:
-
-```bash
-npx wrangler deploy
-```
 
 Arquivos: `index.html`, `interesse.html`, `privacidade.html`.
