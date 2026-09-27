@@ -1,1 +1,3 @@
 PUBLIC_URL.txt
+.wrangler/
+node_modules/
