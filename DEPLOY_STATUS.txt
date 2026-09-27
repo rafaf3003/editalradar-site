@@ -1,0 +1,4 @@
+PENDING_CLEAN_DEPLOY
+Target: https://editalradar.pages.dev/ or https://editalradar.netlify.app/
+Blocked: OAuth (Cloudflare Pages / Netlify / Vercel). Current workers.dev subdomain is brindle-potential (unacceptable).
+Do NOT share https://editalradar.brindle-potential.workers.dev/ or rafaf3003.github.io with customers.
