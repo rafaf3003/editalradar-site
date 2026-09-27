@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EditalRadar — Licitações de ar-condicionado no seu e-mail</title>
+  <meta name="description" content="Alertas de licitações públicas de manutenção e climatização para empresas de ar-condicionado em São Paulo. Link oficial do PNCP em cada alerta." />
+  <style>
+    :root {
+      --bg:#070b14; --card:#101827; --line:#243044; --text:#e8eefc; --muted:#9aa8c7;
+      --accent:#3d8bfd; --accent2:#2dd4bf; --warn:#fbbf24;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:radial-gradient(1200px 600px at 10% -10%,#132039 0%,var(--bg) 55%);color:var(--text);line-height:1.55}
+    a{color:var(--accent2)}
+    .wrap{max-width:880px;margin:0 auto;padding:28px 20px 72px}
+    header{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:36px}
+    .logo{font-weight:750;letter-spacing:-0.02em;font-size:1.15rem}
+    .logo span{color:var(--accent2)}
+    nav a{color:var(--muted);text-decoration:none;margin-left:16px;font-size:0.95rem}
+    nav a:hover{color:var(--text)}
+    h1{font-size:clamp(1.7rem,4vw,2.35rem);line-height:1.15;margin:0 0 14px;letter-spacing:-0.03em}
+    .lead{font-size:1.08rem;color:var(--muted);max-width:38rem}
+    .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0 8px}
+    .btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:650;padding:13px 18px;border-radius:10px}
+    .btn.secondary{background:transparent;border:1px solid var(--line);color:var(--text)}
+    .btn:hover{filter:brightness(1.07)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:34px 0}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 16px 14px}
+    .card h3{margin:0 0 8px;font-size:1rem}
+    .card p{margin:0;color:var(--muted);font-size:0.95rem}
+    h2{font-size:1.25rem;margin:40px 0 12px}
+    .sample{background:var(--card);border-left:4px solid var(--accent2);border-radius:0 12px 12px 0;padding:16px 18px;color:#c9d4ee;font-size:0.92rem;white-space:pre-wrap}
+    .price{display:flex;flex-wrap:wrap;align-items:flex-end;gap:10px 18px;background:linear-gradient(135deg,#12233f,#101827);border:1px solid var(--line);border-radius:16px;padding:20px;margin-top:18px}
+    .price strong{font-size:1.8rem}
+    .muted{color:var(--muted)}
+    .fine{font-size:0.85rem;color:var(--muted);margin-top:40px}
+    ul.check{padding-left:1.1rem;color:var(--muted)}
+    ul.check li{margin:6px 0}
+    footer{margin-top:48px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:0.9rem}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">Edital<span>Radar</span></div>
+      <nav>
+        <a href="#como">Como funciona</a>
+        <a href="#exemplo">Exemplo</a>
+        <a href="#preco">Preço</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
+
+    <h1>Licitações de ar-condicionado sem vasculhar o PNCP</h1>
+    <p class="lead">O EditalRadar monitora compras públicas e avisa empresas de climatização quando aparece manutenção ou instalação alinhada ao perfil de vocês — com resumo em português e <strong style="color:var(--text)">link oficial verificado</strong>.</p>
+    <div class="cta-row">
+      <a class="btn" id="contato" href="mailto:equipe.editalradar@gmail.com?subject=Quero%20amostra%20gr%C3%A1tis%20EditalRadar">Quero amostra grátis</a>
+      <a class="btn secondary" href="mailto:equipe.editalradar@gmail.com?subject=D%C3%BAvida%20EditalRadar">Falar com a Marina</a>
+    </div>
+    <p class="muted" style="font-size:0.9rem">Piloto Grande São Paulo · 1 semana grátis · sem cobrança nesta fase</p>
+
+    <div class="grid">
+      <div class="card"><h3>Filtro de verdade</h3><p>Priorizamos manutenção, PMOC, VRF e climatização — não enchemos a caixa com compra de aparelho residencial.</p></div>
+      <div class="card"><h3>Link oficial</h3><p>Todo alerta leva ao anúncio no PNCP. Conferimos o link antes de enviar.</p></div>
+      <div class="card"><h3>Só o radar</h3><p>Não licita, não elabora proposta e não executa serviço de ar-condicionado.</p></div>
+    </div>
+
+    <h2 id="como">Como funciona</h2>
+    <ul class="check">
+      <li>Vocês dizem região e tipo de serviço (manutenção, instalação, PMOC…).</li>
+      <li>Monitoramos publicações no Portal Nacional de Contratações Públicas.</li>
+      <li>Mandamos e-mail curto: o quê, órgão, prazo, por que bate, o que checar, link.</li>
+      <li>Vocês decidem se participam.</li>
+    </ul>
+
+    <h2 id="exemplo">Exemplo de alerta</h2>
+    <div class="sample">Assunto: [EditalRadar] Manutenção VRF — oportunidade em São Paulo/SP
+
+Órgão: instituição pública na capital
+Objeto: manutenção preventiva e corretiva em sistema de climatização (VRF)
+Prazo: informado no alerta (conferir no PNCP)
+Por que combina: serviço contínuo de manutenção, não só venda de equipamento
+Checar: atestado técnico, peças, visita técnica
+Próximo passo: abrir o link oficial do PNCP e decidir
+
+[Link oficial verificado no envio]</div>
+
+    <h2 id="preco">Preço do piloto</h2>
+    <div class="price">
+      <div>
+        <div class="muted">Depois da amostra</div>
+        <strong>R$ 249</strong> <span class="muted">/ mês</span>
+      </div>
+      <p class="muted" style="margin:0;max-width:28rem">Preço de teste. Agora estamos só com amostra grátis de 1 semana. Se os alertas não forem claramente úteis, não faça sentido continuar.</p>
+    </div>
+
+    <h2>Para quem é</h2>
+    <p class="muted">Empresas de manutenção e instalação de ar-condicionado / climatização na Grande SP que querem acompanhar compras públicas sem viver no portal.</p>
+
+    <p class="fine">Dados a partir de fontes públicas (PNCP). Sempre com link para o anúncio original. EditalRadar não é assessoria de licitação.</p>
+
+    <footer>
+      <div><strong style="color:var(--text)">EditalRadar</strong> · Marina · <a href="mailto:equipe.editalradar@gmail.com">equipe.editalradar@gmail.com</a></div>
+      <div style="margin-top:6px">© 2026 EditalRadar — piloto</div>
+     · <a href="privacidade.html">Privacidade</a></footer>
+  </div>
+</body>
+</html>
